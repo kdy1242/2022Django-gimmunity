@@ -47,7 +47,7 @@
     <div><p>Hi {{ user.username }}!</p></div>
     <div><a href="{% url 'logout' %}">Log Out</a></div>
     {% else %}
-    <div><p>You are not logged in</p></div>
+    <div><p>로그인하세요</p></div>
     <div><a href="{% url 'login' %}">Log In</a> or <a href="{% url 'signup' %}">Sign Up</a></div>
     {% endif %}
 </body>
