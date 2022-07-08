@@ -6,11 +6,9 @@
     <title>{{object.title}}</title>
 </head>
 <body>
-    <p>title: {{object.title}}</p>
-    <p>author: {{object.author}}</p>
-    <p>content: {{object.content}}</p>
-    <p>created_at: {{object.created_at|date:'Y-m-d, H:i'}}</p>
-    <p>modified_at: {{object.modified_at|date:'Y-m-d, H:i'}}</p>
+    <p>제목: {{object.title}}</p>
+    <p>작성자: {{object.author}}</p>
+    <p>내용: {{object.content}}</p>
     <div>
         <a href="{% url 'update' object.id %}">수정</a>
         <a href="{% url 'delete' object.id %}">삭제</a>
